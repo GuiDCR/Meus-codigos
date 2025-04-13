@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Manipulação de Eventos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="funções m.d.e.js"></script>
+    <head>
+    
+    <body bgcolor="#5A595D" text="white">
+        <h1 style="color:rgb(255, 255, 255); text-align:center; font-family:Arial;"> MANIPULAÇÃO DE EVENTOS</h1>
+        <h2 style="color:rgb(255, 255, 255); text-align:center; font-family:Arial;"> Exemplo de alguns eventos em Javascript</h2>
+
+        <!-- Comandos onMouseOver e onMouseOut-->
+        <div onMouseOver="mOver(this)" onMouseOut="mOut(this)" style="text-align:center; background-color:#5f9678; color:yellow; width:155px; height:25px; padding:20px; margin:auto;">
+            Passe o mouse aqui
+        </div>
+        <br>
+
+        <!-- Comando onMouseDown e onMouseUp-->
+        <div onMouseDown="mDown(this)" onMouseUp="mUp(this)" style="text-align:center; background-color:#5f9678; color:yellow;
+            width:155px; height:25px; padding:20px; margin:auto;">
+            Clique, segure e solte
+        </div>
+        <br>
+
+        <!-- Comando onFocus e onBlur -->
+        <form style="text-align:center;">
+            <input type="text" id="textbox1" onFocus="dentro()" onBlur="fora()"> 
+        </form>
+        <p style="text-align:center;" id="textinput"></p>
+
+        <!-- Comando onDblClick -->
+        <div onDblClick="trocar()" id="doubleclick" style="text-align:center; background-color:#5f9678; color:yellow;
+            width:155px; height:25px; padding:20px; margin:auto;">
+            Clique aqui duas vezes
+        </div>
+        <br>
+        <!--Comando onSelect-->
+        <form style="text-align:center;">
+            <p style="text-align:center; color:yellow;">Escreva um texto e selecione-o</p>
+            <input type="text" id="textbox2" onSelect="chamar()"> 
+        </form>
+        <br>
+        <!-- Comando onKeyDown -->
+         <form style="text-align:center">
+            <p style="color:yellow;"> Digite algo</p>
+            <input type="text" id="textbox3" onKeyDown="teclar()">
+            <p id="textinput2"></p>
+         </form>
+         <!-- Comando onKeyUp-->
+        <form style="text-align:center">
+            <p style="color:yellow;"> Tente escrever em maiúsculo</p>
+            <input type="text" id="textbox4" onKeyUp="mudar_para_minusculo()">
+            <p id="descr_onkeyup"></p>
+        </form>
+    </body>
+<html>
